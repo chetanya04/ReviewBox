@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: rgb(46, 42, 42);
+  justify-content: center;
+}
+
+.reviewBox{
+  background-color: white;
+    height: 75vh;
+    width: 62vw;
+    margin: 74px;
+    border-radius: 25px;
+}
+
+
+.review-container {
+  text-align: center;
+  background-color: #9cbcf3;
+
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.star {
+  font-size: 2rem;
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star:hover,
+.star.selected {
+  color: #ffcc00;
+}
+
+
+
+.onclick{
+  text-align: end;
+}
+
+button {
+  margin: 5px;
+  padding: 6px 14px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.yes-button {
+  background-color: rgb(219, 236, 219);
+}
+
+.no-button {
+  background-color: rgb(219, 236, 219);
+}
+
+.clicked {
+  background-color: rgb(0, 89, 255);
+}
+
+.submitButton {
+  display: inline-block;
+  font-size: 12px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-items: end;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+.submitClickedClass {
+  background-color: #28a745 !important;
+}
+
+.submittedMessage {
+  margin-top: -8px;
+  color: #28a745;
+  font-weight: bold;
+  text-align: center;
+}
